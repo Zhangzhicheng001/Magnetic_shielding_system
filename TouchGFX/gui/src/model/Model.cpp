@@ -17,11 +17,11 @@ void Model::tick()
 	else HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 	modelListener ->toggle_icon(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13));
 	
-	
+	HAL_ADC_Start_IT(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1, 100);
 	uint16_t ADC1_NB = HAL_ADC_GetValue(&hadc1);
-	modelListener -> get_adc(ADC1_NB+50);
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-	//modelListener -> get_adc(50);
-	printf("1");
+	//modelListener -> get_adc(ADC1_NB+50);
+	modelListener -> get_adc(50);
+	
 	
 }
