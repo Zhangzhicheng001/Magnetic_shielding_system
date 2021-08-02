@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "template",
+    "Name": "STM32H750_Control",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 24 ],
     "AvailableLCDs":
@@ -14,7 +14,7 @@
         "Height": 480
       }
     ],
-    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../template.ioc --platform=m7",
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../STM32H750_Control.ioc --platform=m7",
     "Family" : "STM32H7",
     "SubFamily" : "STM32H750 Value line"
   },
