@@ -10,7 +10,7 @@ MainView::MainView()
 void MainView::setupScreen()
 {
     MainViewBase::setupScreen();
-
+		
     // Initialize graph range with default slider value at start up
     sliderValueChanged(sliderResolution.getValue());
 }
@@ -23,14 +23,20 @@ void MainView::tearDownScreen()
 void MainView::handleTickEvent()
 {
     tickCounter++;
-
+/*
     // Insert each second tick
     if (tickCounter % 2 == 0)
     {
         float yMax = graph.getGraphRangeYMaxAsFloat();
-
         // Insert "random" points along a sine wave
-        graph.addDataPoint((int)((sinf(tickCounter * .02f) + 1) * (yMax / 2.2f)) + rand() % (int)(yMax / 10.f));
+        //graph.addDataPoint((int)((sinf(tickCounter * .02f) + 1) * (yMax / 2.2f)) + rand() % (int)(yMax / 10.f));		
+    }
+	*/
+	if (tickCounter % 2 == 0)
+    {
+        float yMax = graph.getGraphRangeYMaxAsFloat();
+        graph.addDataPoint(get_adc(adc_value));	
+				//graph.addDataPoint(50);		
     }
 }
 
@@ -68,6 +74,9 @@ void MainView::toggle_icon(uint8_t value)
 		radioButton1.setSelected(true);
 	else 
 		radioButton1.setSelected(false);
+}
 
-
+int16_t MainView::get_adc(uint16_t value)
+{
+	adc_value = value;
 }

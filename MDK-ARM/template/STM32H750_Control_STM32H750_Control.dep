@@ -1,6 +1,6 @@
 Dependencies for Project 'STM32H750_Control', Target 'STM32H750_Control': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32h750xx.s)(0x61076496)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 535" --pd "_RTE_ SETA 1" --pd "STM32H750xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32h750xx.lst --xref -o template\startup_stm32h750xx.o --depend template\startup_stm32h750xx.d)
+F (startup_stm32h750xx.s)(0x6107A60C)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 535" --pd "_RTE_ SETA 1" --pd "STM32H750xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32h750xx.lst --xref -o template\startup_stm32h750xx.o --depend template\startup_stm32h750xx.d)
 F (..\Core\gt911\gt911.c)(0x5FB34E36)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\gt911.o --depend template\gt911.d)
 I (..\Core\gt911\gt911.h)(0x5FB21AA5)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -13,7 +13,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
@@ -28,6 +28,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -47,7 +50,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (../Core/Inc/main.h)(0x61076493)
+I (../Core/Inc/main.h)(0x6107A60A)
 F (..\Core\sdram\bsp_sdram.c)(0x5FB2702A)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\bsp_sdram.o --depend template\bsp_sdram.d)
 I (..\Core\sdram\bsp_sdram.h)(0x5FB2702A)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -60,7 +63,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
@@ -75,6 +78,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -93,10 +99,10 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (../Core/Src/main.c)(0x61076494)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\main.o --depend template\main.d)
-I (../Core/Inc/main.h)(0x61076493)
+F (../Core/Src/main.c)(0x6107A649)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\main.o --depend template\main.d)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -120,6 +126,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -139,7 +148,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -151,14 +160,14 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x60E7B714)
-I (../TouchGFX/App/app_touchgfx.h)(0x61076490)
+I (../TouchGFX/App/app_touchgfx.h)(0x6107A608)
 I (../Core/sdram/bsp_sdram.h)(0x5FB2702A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (../Core/Src/freertos.c)(0x6107648F)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\freertos.o --depend template\freertos.d)
+F (../Core/Src/freertos.c)(0x6107A608)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\freertos.o --depend template\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -166,9 +175,9 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x60E7B714)
-I (../Core/Inc/main.h)(0x61076493)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -190,6 +199,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -207,55 +219,10 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../Core/Src/stm32h7xx_it.c)(0x61076492)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_it.o --depend template\stm32h7xx_it.d)
-I (../Core/Inc/main.h)(0x61076493)
+F (../Core/Src/stm32h7xx_it.c)(0x6107A609)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_it.o --depend template\stm32h7xx_it.d)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
-I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_it.h)(0x61076492)
-F (../Core/Src/stm32h7xx_hal_msp.c)(0x61076493)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_msp.o --depend template\stm32h7xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x61076493)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -279,6 +246,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -296,9 +266,11 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../Core/Src/stm32h7xx_hal_timebase_tim.c)(0x61076493)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_timebase_tim.o --depend template\stm32h7xx_hal_timebase_tim.d)
+I (../Core/Inc/stm32h7xx_it.h)(0x6107A609)
+F (../Core/Src/stm32h7xx_hal_msp.c)(0x6107A60A)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_msp.o --depend template\stm32h7xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -322,6 +294,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -339,9 +314,55 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../TouchGFX/target/TouchGFXHAL.cpp)(0x61076491)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxhal.o --depend template\touchgfxhal.d)
-I (../TouchGFX/target/TouchGFXHAL.hpp)(0x61076491)
-I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x61076490)
+F (../Core/Src/stm32h7xx_hal_timebase_tim.c)(0x6107A60A)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_timebase_tim.o --depend template\stm32h7xx_hal_timebase_tim.d)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
+F (../TouchGFX/target/TouchGFXHAL.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxhal.o --depend template\touchgfxhal.d)
+I (../TouchGFX/target/TouchGFXHAL.hpp)(0x6107A609)
+I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x6107A608)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/HAL.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
@@ -378,7 +399,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
@@ -393,6 +414,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -410,8 +434,8 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../TouchGFX/target/STM32TouchController.cpp)(0x61076491)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32touchcontroller.o --depend template\stm32touchcontroller.d)
-I (../TouchGFX/target/STM32TouchController.hpp)(0x61076491)
+F (../TouchGFX/target/STM32TouchController.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32touchcontroller.o --depend template\stm32touchcontroller.d)
+I (../TouchGFX/target/STM32TouchController.hpp)(0x6107A609)
 I (../middlewares/st/touchgfx/framework/include/platform/driver/touch/TouchController.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
@@ -427,7 +451,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
@@ -442,6 +466,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -459,9 +486,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../TouchGFX/target/TouchGFXGPIO.cpp)(0x61076492)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxgpio.o --depend template\touchgfxgpio.d)
+F (../TouchGFX/target/TouchGFXGPIO.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxgpio.o --depend template\touchgfxgpio.d)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/GPIO.hpp)(0x60D40C2A)
-F (../TouchGFX/target/generated/TouchGFXConfiguration.cpp)(0x61076490)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxconfiguration.o --depend template\touchgfxconfiguration.d)
+F (../TouchGFX/target/generated/TouchGFXConfiguration.cpp)(0x6107A608)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxconfiguration.o --depend template\touchgfxconfiguration.d)
 I (../touchgfx/generated/texts/include/texts/TypedTextDatabase.hpp)(0x610767EE)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
@@ -505,14 +532,14 @@ I (C:\Keil_v5\ARM\ARMCC\include\exception)(0x6025237E)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/Screen.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
-I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x610756D1)
+I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x6107A189)
 I (../touchgfx/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp)(0x61074FA1)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -534,6 +561,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -590,12 +620,12 @@ I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGrou
 I (../touchgfx/generated/images/include/BitmapDatabase.hpp)(0x61074FA1)
 I (../middlewares/st/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp)(0x60D40C2A)
-I (../TouchGFX/target/generated/STM32DMA.hpp)(0x61076491)
-I (../TouchGFX/target/TouchGFXHAL.hpp)(0x61076491)
-I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x61076490)
-I (../TouchGFX/target/STM32TouchController.hpp)(0x61076491)
-F (../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp)(0x61076490)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxgeneratedhal.o --depend template\touchgfxgeneratedhal.d)
-I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x61076490)
+I (../TouchGFX/target/generated/STM32DMA.hpp)(0x6107A609)
+I (../TouchGFX/target/TouchGFXHAL.hpp)(0x6107A609)
+I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x6107A608)
+I (../TouchGFX/target/STM32TouchController.hpp)(0x6107A609)
+F (../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\touchgfxgeneratedhal.o --depend template\touchgfxgeneratedhal.d)
+I (../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp)(0x6107A608)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/HAL.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
@@ -644,14 +674,14 @@ I (C:\Keil_v5\ARM\ARMCC\include\exception)(0x6025237E)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/Screen.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
-I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x610756D1)
+I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x6107A189)
 I (../touchgfx/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp)(0x61074FA1)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -673,6 +703,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -720,9 +753,9 @@ I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/GPIO.hpp)(0x60D40C2A)
-F (../TouchGFX/target/generated/STM32DMA.cpp)(0x61076491)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32dma.o --depend template\stm32dma.d)
+F (../TouchGFX/target/generated/STM32DMA.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32dma.o --depend template\stm32dma.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -746,6 +779,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -763,7 +799,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-I (../TouchGFX/target/generated/STM32DMA.hpp)(0x61076491)
+I (../TouchGFX/target/generated/STM32DMA.hpp)(0x6107A609)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/Bitmap.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
@@ -793,7 +829,7 @@ I (../middlewares/st/touchgfx/framework/include/platform/core/MCUInstrumentation
 I (../middlewares/st/touchgfx/framework/include/platform/driver/button/ButtonController.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/platform/driver/touch/TouchController.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp)(0x60D40C2A)
-F (../TouchGFX/target/generated/OSWrappers.cpp)(0x61076491)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\oswrappers.o --depend template\oswrappers.d)
+F (../TouchGFX/target/generated/OSWrappers.cpp)(0x6107A609)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\oswrappers.o --depend template\oswrappers.d)
 I (C:\Keil_v5\ARM\ARMCC\include\cassert)(0x60252376)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/HAL.hpp)(0x60D40C2A)
@@ -826,7 +862,7 @@ I (../middlewares/st/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp)(0x6
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -838,11 +874,11 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x60E7B714)
-F (../TouchGFX/App/app_touchgfx.c)(0x61076492)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\app_touchgfx.o --depend template\app_touchgfx.d)
-I (../TouchGFX/App/app_touchgfx.h)(0x61076490)
-F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_cortex.o --depend template\stm32h7xx_hal_cortex.d)
+F (../TouchGFX/App/app_touchgfx.c)(0x6107A609)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\app_touchgfx.o --depend template\app_touchgfx.d)
+I (../TouchGFX/App/app_touchgfx.h)(0x6107A608)
+F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_adc.o --depend template\stm32h7xx_hal_adc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -866,6 +902,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -883,9 +922,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_crc.o --depend template\stm32h7xx_hal_crc.d)
+F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_adc_ex.o --depend template\stm32h7xx_hal_adc_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -909,49 +948,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
-F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_crc_ex.o --depend template\stm32h7xx_hal_crc_ex.d)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
-I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
-I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
-I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -971,7 +970,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_rcc.o --depend template\stm32h7xx_hal_rcc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -995,6 +994,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1014,7 +1016,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_rcc_ex.o --depend template\stm32h7xx_hal_rcc_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1038,6 +1040,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1057,7 +1062,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_flash.o --depend template\stm32h7xx_hal_flash.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1081,6 +1086,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1100,7 +1108,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_flash_ex.o --depend template\stm32h7xx_hal_flash_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1124,6 +1132,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1143,7 +1154,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_gpio.o --depend template\stm32h7xx_hal_gpio.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1167,6 +1178,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1186,7 +1200,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_hsem.o --depend template\stm32h7xx_hal_hsem.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1210,6 +1224,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1229,7 +1246,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_dma.o --depend template\stm32h7xx_hal_dma.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1253,6 +1270,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1272,7 +1292,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_dma_ex.o --depend template\stm32h7xx_hal_dma_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1296,6 +1316,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1315,7 +1338,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_mdma.o --depend template\stm32h7xx_hal_mdma.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1339,6 +1362,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1358,7 +1384,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_pwr.o --depend template\stm32h7xx_hal_pwr.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1382,6 +1408,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1401,7 +1430,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_pwr_ex.o --depend template\stm32h7xx_hal_pwr_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1425,6 +1454,55 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
+F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_cortex.o --depend template\stm32h7xx_hal_cortex.d)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1444,7 +1522,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal.o --depend template\stm32h7xx_hal.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1468,6 +1546,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1487,7 +1568,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_i2c.o --depend template\stm32h7xx_hal_i2c.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1511,6 +1592,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1530,7 +1614,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_i2c_ex.o --depend template\stm32h7xx_hal_i2c_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1554,6 +1638,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1573,7 +1660,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_exti.o --depend template\stm32h7xx_hal_exti.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1597,6 +1684,101 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
+F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_crc.o --depend template\stm32h7xx_hal_crc.d)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
+F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_crc_ex.o --depend template\stm32h7xx_hal_crc_ex.d)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x60E7B70D)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x60E7B710)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1616,7 +1798,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_dma2d.o --depend template\stm32h7xx_hal_dma2d.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1640,6 +1822,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1659,7 +1844,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_ll_fmc.o --depend template\stm32h7xx_ll_fmc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1683,6 +1868,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1702,7 +1890,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_sdram.o --depend template\stm32h7xx_hal_sdram.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1726,6 +1914,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1745,7 +1936,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_ltdc.o --depend template\stm32h7xx_hal_ltdc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1769,6 +1960,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1788,7 +1982,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_ltdc_ex.o --depend template\stm32h7xx_hal_ltdc_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1812,6 +2006,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1831,7 +2028,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_tim.o --depend template\stm32h7xx_hal_tim.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1855,6 +2052,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1874,7 +2074,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_tim_ex.o --depend template\stm32h7xx_hal_tim_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1898,6 +2098,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1917,7 +2120,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_uart.o --depend template\stm32h7xx_hal_uart.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1941,6 +2144,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -1960,7 +2166,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x60E7B712)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c)(0x60E7B712)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\stm32h7xx_hal_uart_ex.o --depend template\stm32h7xx_hal_uart_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -1984,6 +2190,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2012,7 +2221,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60E7B710)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x60E7B710)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x60E7B70D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60E7B712)
@@ -2027,6 +2236,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2048,7 +2260,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x60E7B714)(--c99 -c -
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2062,7 +2274,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2077,7 +2289,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2090,7 +2302,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2104,7 +2316,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2119,7 +2331,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2134,7 +2346,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2150,7 +2362,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2168,7 +2380,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2180,7 +2392,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x6
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x60E7B714)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/FreeRTOSConfig.h)(0x6107648F)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6107A608)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x60E7B714)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x60E7B714)
@@ -2222,8 +2434,8 @@ I (../middlewares/st/touchgfx/framework/include/common/AbstractPartition.hpp)(0x
 I (../middlewares/st/touchgfx/framework/include/mvp/MVPHeap.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
-F (../touchgfx/gui/src/main_screen/mainpresenter.cpp)(0x61075655)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\mainpresenter.o --depend template\mainpresenter.d)
-I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x610756D1)
+F (../touchgfx/gui/src/main_screen/mainpresenter.cpp)(0x61079ADD)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\mainpresenter.o --depend template\mainpresenter.d)
+I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x6107A189)
 I (../touchgfx/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp)(0x61074FA1)
 I (../touchgfx/gui/include/gui/common/FrontendApplication.hpp)(0x5F72C3CE)
 I (../touchgfx/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp)(0x61074F6C)
@@ -2259,11 +2471,11 @@ I (../middlewares/st/touchgfx/framework/include/mvp/MVPHeap.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -2285,6 +2497,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2340,8 +2555,8 @@ I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Image.hpp)(0x60
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp)(0x60D40C2A)
-F (../touchgfx/gui/src/main_screen/mainview.cpp)(0x61075797)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\mainview.o --depend template\mainview.d)
-I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x610756D1)
+F (../touchgfx/gui/src/main_screen/mainview.cpp)(0x6107A120)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\mainview.o --depend template\mainview.d)
+I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x6107A189)
 I (../touchgfx/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp)(0x61074FA1)
 I (../touchgfx/gui/include/gui/common/FrontendApplication.hpp)(0x5F72C3CE)
 I (../touchgfx/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp)(0x61074F6C)
@@ -2377,11 +2592,11 @@ I (../middlewares/st/touchgfx/framework/include/mvp/MVPHeap.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -2403,6 +2618,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2459,12 +2677,12 @@ I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp)(0x60D40C2A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-F (../touchgfx/gui/src/model/model.cpp)(0x610759A2)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\model.o --depend template\model.d)
+F (../touchgfx/gui/src/model/model.cpp)(0x6107A4E5)(--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../TouchGFX/App -I ../TouchGFX/target/generated -I ../TouchGFX/target -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../Core/gt911 -I ../Core/sdram -I ../middlewares/st/touchgfx/framework/include -I ../touchgfx/generated/fonts/include -I ../touchgfx/generated/gui_generated/include -I ../touchgfx/generated/images/include -I ../touchgfx/generated/texts/include -I ../touchgfx/gui/include-I.\RTE\_STM32H750_Control-IC:\Users\60159\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60159\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32H750xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H750xx-o template\model.o --depend template\model.d)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -2488,6 +2706,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2609,14 +2830,14 @@ I (../middlewares/st/touchgfx/framework/include/common/Meta.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/common/Partition.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/common/FrontendApplication.hpp)(0x5F72C3CE)
-I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x610756D1)
+I (../touchgfx/gui/include/gui/main_screen/MainView.hpp)(0x6107A189)
 I (../touchgfx/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp)(0x61074FA1)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -2638,6 +2859,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)
@@ -2771,11 +2995,11 @@ I (../middlewares/st/touchgfx/framework/include/mvp/MVPHeap.hpp)(0x60D40C2A)
 I (../middlewares/st/touchgfx/framework/include/mvp/Presenter.hpp)(0x60D40C2A)
 I (../touchgfx/gui/include/gui/model/Model.hpp)(0x5F72C3CE)
 I (../middlewares/st/touchgfx/framework/include/mvp/View.hpp)(0x60D40C2A)
-I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107569A)
-I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x6107557B)
-I (../Core/Inc/main.h)(0x61076493)
+I (../touchgfx/gui/include/gui/main_screen/MainPresenter.hpp)(0x6107A13C)
+I (../touchgfx/gui/include/gui/model/ModelListener.hpp)(0x61079E57)
+I (../Core/Inc/main.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x60E7B712)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x61076493)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6107A60A)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x60E7B712)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x60E7B70D)
@@ -2797,6 +3021,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x60E7B712)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h)(0x60E7B712)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x60E7B712)

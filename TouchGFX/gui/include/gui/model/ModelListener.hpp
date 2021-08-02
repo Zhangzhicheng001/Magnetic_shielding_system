@@ -16,6 +16,7 @@ public:
         model = m;
     }
 		virtual void toggle_icon(uint8_t value){};
+		virtual void get_adc(uint16_t value){};
 protected:
     Model* model;
 };

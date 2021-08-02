@@ -22,3 +22,9 @@ void MainPresenter::toggle_icon(uint8_t value)
 	view.toggle_icon(value);
 
 }
+
+void MainPresenter::get_adc(uint16_t value)
+{
+	view.get_adc(value);
+
+}
