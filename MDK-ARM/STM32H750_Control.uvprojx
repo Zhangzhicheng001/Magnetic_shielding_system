@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H750xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;   ../TouchGFX/App;   ../TouchGFX/target/generated;   ../TouchGFX/target;   ../Drivers/STM32H7xx_HAL_Driver/Inc;   ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;   ../Middlewares/Third_Party/FreeRTOS/Source/include;   ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;   ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;   ../Drivers/CMSIS/Device/ST/STM32H7xx/Include;   ../Drivers/CMSIS/Include;   ../Core/gt911;   ../Core/sdram; ../middlewares/st/touchgfx/framework/include; ../touchgfx/generated/fonts/include; ../touchgfx/generated/gui_generated/include; ../touchgfx/generated/images/include; ../touchgfx/generated/texts/include; ../touchgfx/gui/include</IncludePath>
+              <IncludePath>../Core/Inc;   ../TouchGFX/App;   ../TouchGFX/target/generated;   ../TouchGFX/target;   ../Drivers/STM32H7xx_HAL_Driver/Inc;   ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;   ../Middlewares/Third_Party/FreeRTOS/Source/include;   ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;   ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;   ../Drivers/CMSIS/Device/ST/STM32H7xx/Include;   ../Drivers/CMSIS/Include;   ../Core/gt911;   ../Core/sdram;../middlewares/st/touchgfx/framework/include;../touchgfx/generated/fonts/include;../touchgfx/generated/gui_generated/include;../touchgfx/generated/images/include;../touchgfx/generated/texts/include;../touchgfx/gui/include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
