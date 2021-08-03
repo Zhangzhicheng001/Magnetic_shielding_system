@@ -3,7 +3,8 @@
 #include "main.h"
 
 extern ADC_HandleTypeDef hadc1;
-
+extern ADC_HandleTypeDef hadc2;
+extern int adc_value;
 Model::Model() : modelListener(0)
 {
 
@@ -17,11 +18,12 @@ void Model::tick()
 	else HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 	modelListener ->toggle_icon(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13));
 	
-	HAL_ADC_Start_IT(&hadc1);
-	HAL_ADC_PollForConversion(&hadc1, 100);
-	uint16_t ADC1_NB = HAL_ADC_GetValue(&hadc1);
-	//modelListener -> get_adc(ADC1_NB+50);
-	modelListener -> get_adc(50);
-	
+
+  HAL_ADC_Start(&hadc2);
+  HAL_ADC_PollForConversion(&hadc2,10);	
+  adc_value = HAL_ADC_GetValue(&hadc2);	
+  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
+  HAL_Delay(100);
+	modelListener -> get_adc(adc_value);
 	
 }
