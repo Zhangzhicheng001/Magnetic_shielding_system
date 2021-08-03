@@ -18,14 +18,16 @@ void Model::tick()
 	if(GPIO_PH9 == 1) HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
 	else HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 	modelListener ->toggle_icon(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13));
-	
 
-  HAL_ADC_Start(&hadc2);
-  HAL_ADC_PollForConversion(&hadc2,10);	
-  adc_value = HAL_ADC_GetValue(&hadc2);
-	adc_value = adc_value*(3.3/40960);
-  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
-  HAL_Delay(100);
+	
+	HAL_ADC_Start(&hadc2);
+	HAL_ADC_PollForConversion(&hadc2,10);	
+	adc_value = HAL_ADC_GetValue(&hadc2);	
+	adc_value = adc_value*(3.3/4096);	
+	
+  
+	HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
+	HAL_Delay(10);
 	modelListener -> get_adc(adc_value);
 	
 }
