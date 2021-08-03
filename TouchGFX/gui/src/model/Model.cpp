@@ -5,6 +5,7 @@
 extern ADC_HandleTypeDef hadc1;
 extern ADC_HandleTypeDef hadc2;
 extern int adc_value;
+
 Model::Model() : modelListener(0)
 {
 
@@ -21,7 +22,8 @@ void Model::tick()
 
   HAL_ADC_Start(&hadc2);
   HAL_ADC_PollForConversion(&hadc2,10);	
-  adc_value = HAL_ADC_GetValue(&hadc2);	
+  adc_value = HAL_ADC_GetValue(&hadc2);
+	adc_value = adc_value*(3.3/40960);
   HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
   HAL_Delay(100);
 	modelListener -> get_adc(adc_value);
