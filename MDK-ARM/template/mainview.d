@@ -85,7 +85,7 @@ template\mainview.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Box.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Widget.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp
+template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/Utils.hpp
@@ -115,9 +115,4 @@ template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widge
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/TypedText.hpp
 template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/Texts.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/containers/Slider.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Image.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp
-template\mainview.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp
 template\mainview.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

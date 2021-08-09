@@ -4,10 +4,8 @@
 #include <gui_generated/main_screen/MainViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
-#include "BitmapDatabase.hpp"
 
-MainViewBase::MainViewBase() :
-    sliderValueChangedCallback(this, &MainViewBase::sliderValueChangedCallbackHandler)
+MainViewBase::MainViewBase()
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -24,28 +22,28 @@ MainViewBase::MainViewBase() :
     graphBackground.setBorderSize(1);
 
     graph.setScale(1);
-    graph.setGraphRangeX(0, 100);
+    graph.setGraphRangeX(0, 200);
     graph.setPosition(15, 24, 703, 424);
     graph.setGraphAreaMargin(10, 28, 19, 22);
     graph.setGraphAreaPadding(2, 6, 0, 6);
-    graph.setGraphRangeY(0, 180);
+    graph.setGraphRangeY(0, 6000);
 
     graphMajorYAxisGrid.setScale(1);
     graphMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    graphMajorYAxisGrid.setInterval(20);
+    graphMajorYAxisGrid.setInterval(1000);
     graphMajorYAxisGrid.setLineWidth(1);
     graph.addGraphElement(graphMajorYAxisGrid);
 
     graphMajorXAxisLabel.setScale(1);
     graphMajorXAxisLabel.setInterval(20);
     graphMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
-    graphMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    graphMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     graph.addBottomElement(graphMajorXAxisLabel);
 
     graphMajorYAxisLabel.setScale(1);
-    graphMajorYAxisLabel.setInterval(20);
-    graphMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
-    graphMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    graphMajorYAxisLabel.setInterval(1000);
+    graphMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
+    graphMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     graph.addLeftElement(graphMajorYAxisLabel);
 
     graphLine1.setScale(1);
@@ -54,39 +52,13 @@ MainViewBase::MainViewBase() :
     graphLine1.setLineWidth(2);
     graph.addGraphElement(graphLine1);
 
-    sliderResolution.setXY(728, 136);
-    sliderResolution.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_SLIDER3_VERTICAL_ROUND_BACK_ID), touchgfx::Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_SLIDER3_VERTICAL_ROUND_FILL_ID), touchgfx::Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_INDICATORS_SLIDER3_VERTICAL_ROUND_NOB_ID));
-    sliderResolution.setupVerticalSlider(7, 3, 0, 0, 125);
-    sliderResolution.setValueRange(20, 250);
-    sliderResolution.setValue(180);
-    sliderResolution.setNewValueCallback(sliderValueChangedCallback);
-
-    radioButton1.setXY(728, 24);
-    radioButton1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_MARK_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_MARK_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_MARK_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_MARK_NORMAL_ID));
-    radioButton1.setSelected(false);
-    radioButton1.setDeselectionEnabled(false);
-
     add(__background);
     add(box1);
     add(graphBackground);
     add(graph);
-    add(sliderResolution);
-    add(radioButton1);
-    radioButtonGroup1.add(radioButton1);
 }
 
 void MainViewBase::setupScreen()
 {
 
-}
-
-void MainViewBase::sliderValueChangedCallbackHandler(const touchgfx::Slider& src, int value)
-{
-    if (&src == &sliderResolution)
-    {
-        //SliderValueChanged
-        //When sliderResolution value changed call virtual function
-        //Call sliderValueChanged
-        sliderValueChanged(value);
-    }
 }

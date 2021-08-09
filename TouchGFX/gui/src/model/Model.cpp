@@ -34,7 +34,7 @@ void Model::tick()
 	for(i = 0; i < FILTER_N; i++) {
     HAL_ADC_Start(&hadc1);
 		HAL_ADC_PollForConversion(&hadc1,10);	
-		filter_buf[i] = HAL_ADC_GetValue(&hadc1)*(3.3/4096);
+		filter_buf[i] = HAL_ADC_GetValue(&hadc1)/20;
 		HAL_Delay(2);	
   }
 

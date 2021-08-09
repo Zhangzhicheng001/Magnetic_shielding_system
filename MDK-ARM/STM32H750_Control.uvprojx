@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H750xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;                 ../TouchGFX/App;                 ../TouchGFX/target/generated;                 ../TouchGFX/target;                 ../Drivers/STM32H7xx_HAL_Driver/Inc;                 ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;                 ../Middlewares/Third_Party/FreeRTOS/Source/include;                 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;                 ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;                 ../Drivers/CMSIS/Device/ST/STM32H7xx/Include;                 ../Drivers/CMSIS/Include;                 ../Core/gt911;                 ../Core/sdram;              ../middlewares/st/touchgfx/framework/include;              ../touchgfx/generated/fonts/include;              ../touchgfx/generated/gui_generated/include;              ../touchgfx/generated/images/include;              ../touchgfx/generated/texts/include;              ../touchgfx/gui/include</IncludePath>
+              <IncludePath>../Core/Inc;                 ../TouchGFX/App;                 ../TouchGFX/target/generated;                 ../TouchGFX/target;                 ../Drivers/STM32H7xx_HAL_Driver/Inc;                 ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;                 ../Middlewares/Third_Party/FreeRTOS/Source/include;                 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;                 ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;                 ../Drivers/CMSIS/Device/ST/STM32H7xx/Include;                 ../Drivers/CMSIS/Include;                 ../Core/gt911;                 ../Core/sdram;../middlewares/st/touchgfx/framework/include;../touchgfx/generated/fonts/include;../touchgfx/generated/gui_generated/include;../touchgfx/generated/images/include;../touchgfx/generated/texts/include;../touchgfx/gui/include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -864,41 +864,6 @@
               <FileName>GeneratedFont.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Check_buttons_Check_mark_active.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_mark_active.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Check_buttons_Check_mark_inactive.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_mark_inactive.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Check_buttons_Check_mark_normal.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_mark_normal.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Check_buttons_Check_mark_pressed.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_mark_pressed.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Slider_Vertical_Small_Indicators_Slider3_Vertical_Round_nob.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_slider_vertical_small_indicators_slider3_vertical_round_nob.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Slider_Vertical_Small_Slider3_Vertical_Round_back.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_slider_vertical_small_slider3_vertical_round_back.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Slider_Vertical_Small_Slider3_Vertical_Round_fill.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_slider_vertical_small_slider3_vertical_round_fill.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_NotoSans_Regular_12_4bpp.cpp</FileName>

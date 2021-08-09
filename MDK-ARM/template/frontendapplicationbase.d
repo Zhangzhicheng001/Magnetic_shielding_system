@@ -90,7 +90,7 @@ template\frontendapplicationbase.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7x
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Box.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Widget.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp
+template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/Utils.hpp
@@ -120,11 +120,6 @@ template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/TypedText.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/Texts.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/containers/Slider.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/Image.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp
-template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp
 template\frontendapplicationbase.o: ../touchgfx/generated/texts/include/texts/TextKeysAndLanguages.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp
 template\frontendapplicationbase.o: ../middlewares/st/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp

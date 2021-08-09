@@ -9,13 +9,10 @@
 #include <gui/main_screen/MainPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/GraphScroll.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
-#include <touchgfx/containers/Slider.hpp>
-#include <touchgfx/widgets/RadioButton.hpp>
-#include <touchgfx/widgets/RadioButtonGroup.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -23,14 +20,6 @@ public:
     MainViewBase();
     virtual ~MainViewBase() {}
     virtual void setupScreen();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void sliderValueChanged(int value)
-    {
-        // Override and implement this function in Main
-    }
 
 protected:
     FrontendApplication& application() {
@@ -43,27 +32,14 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box box1;
     touchgfx::BoxWithBorder graphBackground;
-    touchgfx::GraphWrapAndClear<100> graph;
+    touchgfx::GraphScroll<100> graph;
     touchgfx::GraphElementLine graphLine1;
     touchgfx::PainterRGB888 graphLine1Painter;
     touchgfx::GraphElementGridY graphMajorYAxisGrid;
     touchgfx::GraphLabelsX graphMajorXAxisLabel;
     touchgfx::GraphLabelsY graphMajorYAxisLabel;
-    touchgfx::Slider sliderResolution;
-    touchgfx::RadioButton radioButton1;
-    touchgfx::RadioButtonGroup<1> radioButtonGroup1;
 
 private:
-
-    /*
-     * Callback Declarations
-     */
-    touchgfx::Callback<MainViewBase, const touchgfx::Slider&, int> sliderValueChangedCallback;
-
-    /*
-     * Callback Handler Declarations
-     */
-    void sliderValueChangedCallbackHandler(const touchgfx::Slider& src, int value);
 
     /*
      * Canvas Buffer Size
