@@ -79,11 +79,11 @@ static void MX_ADC1_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-int adc_value;
-int i, j;
-int filter_temp, filter_sum = 0;
+int32_t adc_value;
+int32_t i, j;
+int32_t filter_temp, filter_sum = 0;
 const int FILTER_N = 20;
-int filter_buf[FILTER_N];
+int32_t filter_buf[FILTER_N];
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -174,7 +174,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {	
+  {	/*
 		HAL_ADC_Start(&hadc2);
 		HAL_ADC_PollForConversion(&hadc2,10);	
 		adc_value = HAL_ADC_GetValue(&hadc2);	
@@ -184,7 +184,7 @@ int main(void)
   
 		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
 		HAL_Delay(10);
-		
+		*/
 
     /* USER CODE END WHILE */
 

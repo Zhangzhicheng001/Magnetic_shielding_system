@@ -4,12 +4,12 @@
 
 extern ADC_HandleTypeDef hadc1;
 extern ADC_HandleTypeDef hadc2;
-extern int adc_value;
+extern int32_t adc_value;
 
 extern int i, j;
-extern int filter_temp, filter_sum ;
-extern int FILTER_N ;
-extern int filter_buf[];
+extern int32_t filter_temp, filter_sum ;
+extern int32_t FILTER_N ;
+extern int32_t filter_buf[];
 
 
 Model::Model() : modelListener(0)
@@ -29,7 +29,6 @@ void Model::tick()
 
 	
 	//
-
 	for(i = 0; i < FILTER_N; i++) {
     HAL_ADC_Start(&hadc1);
 		HAL_ADC_PollForConversion(&hadc1,10);	
@@ -54,7 +53,9 @@ void Model::tick()
 	adc_value = filter_sum / (FILTER_N - 10);	  
 	//HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_6);
 	HAL_Delay(10);	
+	adc_value = -2000;
 	modelListener -> get_adc(adc_value);
 	filter_sum = 0;
+	ITM_SendChar('A');
 	
 }

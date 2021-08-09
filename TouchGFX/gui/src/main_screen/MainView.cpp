@@ -35,7 +35,7 @@ void MainView::handleTickEvent()
 	if (tickCounter % 2 == 0)
     {
         float yMax = graph.getGraphRangeYMaxAsFloat();
-        graph.addDataPoint(get_adc(adc_value)-1);	
+        graph.addDataPoint(get_adc(adc_value));	
 				//graph.addDataPoint(-500);	
     }
 }

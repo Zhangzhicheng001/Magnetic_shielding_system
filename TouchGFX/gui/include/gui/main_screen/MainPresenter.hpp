@@ -27,7 +27,7 @@ public:
 
     virtual ~MainPresenter() {};
 		void toggle_icon(int8_t value);
-		void get_adc(int16_t value);
+		void get_adc(int16_t?· value);
 			
 private:
     MainPresenter();
