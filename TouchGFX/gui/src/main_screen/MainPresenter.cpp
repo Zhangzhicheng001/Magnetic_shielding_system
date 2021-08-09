@@ -17,13 +17,13 @@ void MainPresenter::deactivate()
 
 }
 
-void MainPresenter::toggle_icon(uint8_t value)
+void MainPresenter::toggle_icon(int8_t value)
 {
 	view.toggle_icon(value);
 
 }
 
-void MainPresenter::get_adc(uint16_t value)
+void MainPresenter::get_adc(int16_t value)
 {
 	view.get_adc(value);
 

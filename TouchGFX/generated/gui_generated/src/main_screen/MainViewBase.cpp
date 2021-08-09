@@ -26,7 +26,7 @@ MainViewBase::MainViewBase()
     graph.setPosition(15, 24, 703, 424);
     graph.setGraphAreaMargin(10, 28, 19, 22);
     graph.setGraphAreaPadding(2, 6, 0, 6);
-    graph.setGraphRangeY(0, 6000);
+    graph.setGraphRangeY(-4000, 6000);
 
     graphMajorYAxisGrid.setScale(1);
     graphMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));

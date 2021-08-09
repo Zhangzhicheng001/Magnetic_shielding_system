@@ -54,7 +54,7 @@
             "DataSeed": 1263446126,
             "NumberOfValues": 100,
             "MaxY": 6000.0,
-            "MinY": 0.0,
+            "MinY": -4000.0,
             "Precision": "1",
             "UseCustomVisibleDataPointRange": true,
             "FirstIndex": 0,

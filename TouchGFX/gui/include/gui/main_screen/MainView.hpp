@@ -12,8 +12,8 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 		void toggle_icon(uint8_t value);
-		int16_t get_adc(uint16_t value);
-		uint16_t adc_value ;
+		int16_t get_adc(int16_t value);
+		int16_t adc_value ;
 protected:
     int tickCounter;
 

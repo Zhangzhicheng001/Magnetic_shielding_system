@@ -26,8 +26,8 @@ public:
     virtual void deactivate();
 
     virtual ~MainPresenter() {};
-		void toggle_icon(uint8_t value);
-		void get_adc(uint16_t value);
+		void toggle_icon(int8_t value);
+		void get_adc(int16_t value);
 			
 private:
     MainPresenter();
